@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Errors\" />
+    <None Remove="StatusAction\" />
+    <None Remove="Enums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Errors\" />
+    <Folder Include="StatusAction\" />
+    <Folder Include="Enums\" />
+  </ItemGroup>
+</Project>

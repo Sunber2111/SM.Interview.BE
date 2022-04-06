@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="ListManagerment\" />
+    <None Remove="ListManagement\Errors\" />
+    <None Remove="ListManagement\Command\" />
+    <None Remove="ListManagement\Constants\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ListManagement\" />
+    <Folder Include="ListManagement\Errors\" />
+    <Folder Include="ListManagement\Command\" />
+    <Folder Include="ListManagement\Constants\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+</Project>
